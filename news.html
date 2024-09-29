@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klein Collins High School News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #e9f5ff; /* Light background */
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #003B5C; /* Navy Blue */
+            color: #F9A800; /* Vegas Gold */
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        nav a {
+            color: #F9A800;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #F4D03F; /* Lighter Gold */
+        }
+
+        .hero {
+            background-image: url('https://example.com/school-banner.jpg'); /* Replace with a relevant image */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .hero h2 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            margin-bottom: 15px;
+            color: #003B5C; /* Navy Blue */
+            border-bottom: 2px solid #F9A800; /* Vegas Gold */
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .story {
+            background: #F9A800; /* Vegas Gold */
+            color: #003B5C; /* Navy Blue */
+            border-radius: 8px;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .story:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            border: 2px solid #003B5C; /* Navy border on hover */
+        }
+
+        .story h3 {
+            margin-bottom: 10px;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        .story p {
+            margin-bottom: 15px;
+            font-size: 0.9em;
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #003B5C; /* Navy Blue */
+            color: #F9A800; /* Vegas Gold */
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .easter-egg {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #E67E22;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            z-index: 1000;
+        }
+
+        .easter-egg:hover {
+            background-color: #D35400; /* Darker orange */
+            transform: scale(1.05);
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .story {
+                font-size: 0.8em;
+            }
+
+            .hero h2 {
+                font-size: 2.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Klein Collins High School News</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#events">Events</a>
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h2>Welcome to Klein Collins News!</h2>
+    </div>
+
+    <div class="container">
+        <h2>Featured Stories</h2>
+        <div class="grid">
+            <div class="story">
+                <h3>Boy Organizes “National No Homework Day,” Proclaims It a “Fundamental Human Right”</h3>
+                <p>He shows up to school wearing a cape and holding a sign, rallying classmates to join him in defiance of the oppressive homework regime.
+                </p>
+                <a href="#link">Read More</a>
+            </div>
+            <div class="story">
+                <h3>Patriotic Teen Fails History Exam, Claims It’s a “Political Statement”</h3>
+                <p>“I’m challenging the system!” he insists while his parents remind him about college applications.
+                </p>
+                <a href="#link">Read More</a>
+            </div>
+            <div class="story">
+                <h3>Teen Creates YouTube Channel for “Extreme Napping,” Claims It’s an Olympic Sport
+
+                </h3>
+                <p>He films himself napping in various locations, earning millions of views while critics argue about the legitimacy of competitive sleeping.
+                </p>
+                <a href="#link">Read More</a>
+            </div>
+            <div class="story">
+                <h3>New Anti-Vaping Ad: "It's not sigma to vape"
+                </h3>
+                <p>
+                    In a new viral anti-vaping ad, teens compete to see who can take the biggest hit from a vape. The winner, covered in clouds, confidently declares, “This is sigma, right?” Only to be met with horrified stares. The screen flashes, “It’s not sigma to vape.</p>
+                <a href="#link">Read More</a>
+            </div>
+        </div>
+
+        <h2>Recent News</h2>
+        <div class="grid">
+            <div class="story">
+                <h3>How to Properly Ignore Your Alarm Clock: A Step-by-Step Guide                </h3>
+                <p>Waking up is overrated, and who really wants to be a morning person anyway? In this enlightening guide, we’ll explore the fine art of ignoring your alarm clock like a pro.</p>
+                <a href="#link">Read More</a>
+            </div>
+            <div class="story">
+                <h3>The Science of Procrastination: Why Tomorrow is Always Better  </h3>
+                <p>Uncover the mysteries of putting things off and why it's a valid life choice.
+                </p>
+                <a href="#link">Read More</a>
+            </div>
+            <div class="story">
+                <h3>How to Pretend to Read When You’re Really Just Staring into Space
+                </h3>
+                <p>Techniques for maintaining the illusion of deep focus.
+                </p>
+                <a href="#link">Read More</a>
+            </div>
+            
+
+        <h2>Upcoming Events</h2>
+        <ul>
+            <li>Friday, Oct 4: Pizza Party in the Gym at 5 PM</li>
+            <li>Monday, Oct 7: Faculty Dance-Off at 3 PM</li>
+            <li>Wednesday, Oct 9: Debate Competition at 4 PM</li>
+            <li>Friday, Oct 11: Mural Reveal at 2 PM</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Klein Collins High School News | All Rights Reserved</p>
+    </footer>
+
+    <div class="easter-egg" onclick="showEasterEgg()">🎉 Surprise Me!</div>
+
+    <script>
+        function showEasterEgg() {
+            alert("🎉 Congratulations! You found the Easter Egg! Keep exploring the site for more surprises!");
+        }
+    </script>
+</body>
+
+</html>
